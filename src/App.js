@@ -1,9 +1,10 @@
 import './App.css';
+import HomePage from './Components/HomePage';
 
 function App() {
   return (
     <div className="App">
-      Medify App
+      <HomePage />
     </div>
   );
 }
