@@ -5,6 +5,11 @@ import SearchBarAndIcons from "./SearchBarAndIcons";
 import OfferCards from "./OfferCards";
 import Specialisation from "./Specialisations";
 import Specialists from "./Specialists";
+import ConsultationLayout from "./ConsultationLayout";
+import BlogAndNews from "./BlogAndNews";
+import MotoAndHighlights from "./MotoAndHighlights";
+import FAQ from "./FAQ";
+import Footer from "./Footer";
 
 const HomePage = () => {
     return ( <div className="homepage">
@@ -14,6 +19,11 @@ const HomePage = () => {
         <OfferCards />
         <Specialisation />
         <Specialists />
+        <ConsultationLayout />
+        <BlogAndNews />
+        <MotoAndHighlights />
+        <FAQ />
+        <Footer />
     </div> );
 }
  
