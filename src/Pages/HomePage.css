@@ -1,14 +1,12 @@
 .navigation-bar{
     margin: 0;
     padding: 0;
+    background-color: #2AA7FF;
 }
 
 .navigation-bar p{
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     width: 100%;
-    background-color: #2AA7FF;
     color: #FFF;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -20,6 +18,10 @@
     justify-content: space-between;
     padding-left: 5rem;
     padding-right: 5rem;
+    background-color: #FFFFFF;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0px 9px 12px 0px #204A6912;
 }
 
 .navigation-items img{
@@ -54,6 +56,7 @@
     position: relative;
     margin-left: 20rem;
     margin-right: 20rem;
+    z-index: -1;
 }
 
 .hero-section h5{
@@ -109,13 +112,18 @@
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #FFF;
-    border-radius: 0.5rem;
-    z-index: 1;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .searchbars-and-button{
     display: flex;
     gap: 2.5rem;
+    margin-left: 20rem;
+    width: 46rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: #FFF;
+    z-index: 1;
 }
 
 .searchbars-and-button div{
@@ -129,7 +137,7 @@
     height: 1rem;
 }
 
-.searchbars-and-button div input{
+.searchbars-and-button div select{
     width: 15rem;
     height: 2rem;
     border: none;
@@ -673,4 +681,268 @@
     gap: 1rem 2rem;
     flex-wrap: wrap;
     color: #FFF;
+}
+
+.search-results-top{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.bookings{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.bookings img {
+    width: 1rem;
+}
+
+.card-and-slots{
+    box-shadow: 0px 15px 35px -5px #00000012;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    width: 50rem;
+    margin-left: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hospital-card{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.slot-headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hospital-card img{
+    width:7.5rem;
+    height:7.5rem;
+}
+
+.hospital-card-text{
+    width: 25rem;
+}
+
+.ratings{
+    background-color: #00A500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #FFF;
+    width: 3rem;
+    height: 2rem;
+    padding-left: 0.2rem;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.ratings img{
+    width: 0.8rem;
+    height:0.8rem;
+}
+
+.offer-fee{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.booking-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-top: 7rem;
+    margin-right: 2rem;
+}
+
+.booking-button h5{
+    color: #00A500;
+    font-weight: 600;
+    width: 10rem;
+    text-align: center;
+}
+
+.booking-button button{
+    background-color: #2AA7FF;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #FFF;
+    font-size:small;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.slot-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.slot-header h6{
+    color: #00A500;
+}
+
+.sessions{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slot-buttons button{
+    border: 1px solid #2AA7FF;
+    color:#2AA7FF;
+}
+
+.sessions-and-slots{
+    display: flex;
+}
+
+.slot-buttons{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 3rem;
+}
+
+.slot-buttons button{
+    margin-right: 3rem;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+.my-bookings-header h1{
+    padding-top: 1rem;
+    background-color: #2AA7FF;
+    height: 5rem;
+    color: #FFF;
+    font-weight: 600;
+    padding-left: 5rem;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+
+.booking-search{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    width: 40rem;
+    height: 4rem;
+    background-color: #FFF;
+    padding-left: 2rem;
+    margin-left: 30rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-bottom: 2rem;
+}
+
+.booking-search button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2AA7FF;
+    height: 2rem;
+    width: 6rem;
+    border: none;
+    border-radius: 0.2rem;
+    color: #FFF;
+}
+
+.booking-search input{
+    width: 30rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border: none;
+}
+
+.booking-search img{
+    height: 1rem;
+}
+
+.booking-card{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0px 15px 35px -5px #00000012;
+    width: 50rem;
+    margin-left: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.booking-card img{
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.booking-ratings{
+    background-color: #00A500;
+    display: flex;
+    width: 3rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: #FFf;
+    gap: 0.3rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+}
+
+.booking-ratings img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.booking-card-text{
+    width: 25rem;
+}
+
+.booking-date-and-time{
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.booking-date-and-time p{
+    height: 2rem;
+    width: 6rem;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 0.2rem;
+}
+
+.booking-date-and-time :first-child{
+    color: #00A500;
+    border: 1px solid #00A500;
+}
+
+.booking-date-and-time :last-child{
+    color:#2AA7FF;
+    border: 1px solid#2AA7FF;
+}
+
+.limitedoffer{
+    height: 20rem;
 }
